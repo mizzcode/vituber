@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   if (darkModeEnabled) {
     document.body.classList.add('dark-mode');
-    darkModeIcon.src = '/assets/images/sun-svgrepo-com.svg';
+    darkModeIcon.src = './assets/images/sun-svgrepo-com.svg';
   }
 
   darkModeToggle.addEventListener('click', function() {
@@ -23,10 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const darkModeIsActive = document.body.classList.contains('dark-mode');
 
     if (darkModeIsActive) {
-      darkModeIcon.src = '/assets/images/sun-svgrepo-com.svg';
+      darkModeIcon.src = './assets/images/sun-svgrepo-com.svg';
       localStorage.setItem('darkMode', 'enabled');
     } else {
-      darkModeIcon.src = '/assets/images/moon-stars-svgrepo-com.svg';
+      darkModeIcon.src = './assets/images/moon-stars-svgrepo-com.svg';
       localStorage.setItem('darkMode', 'disabled');
     }
   });
